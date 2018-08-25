@@ -1,0 +1,25 @@
+var class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels =
+[
+    [ "DemoChannels", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a11916cf472afdbe0ce49a951803bad8c", null ],
+    [ "InitChannelList", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a68b05ac6b4af1f026f5d108ce0254c41", null ],
+    [ "CardDef430_1", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#aad5385d7908c61c8741a52612b8c04fa", null ],
+    [ "CardDef430_2", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#acfb6d814dd69d84aafa53df0be9e8778", null ],
+    [ "CardDef530_1", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a9766e8942601ded30a9bd3929ef17eb0", null ],
+    [ "CardDef842_0", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#aba3c201a1430bf3c6a16d6c2cd1729ff", null ],
+    [ "DI_GripperInHP", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#affa701347fcdce96f362a83407198358", null ],
+    [ "DI_GripperInWP", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a3ec3dc27c20c434ed48399e431f153e3", null ],
+    [ "DI_IndexInHP", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a812333ef6c929324249a702712d68038", null ],
+    [ "DI_IndexInWP", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#acc6dc5bec81fa3279b8a544336b316fc", null ],
+    [ "DI_MainPressureReady", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a925ca4fc12d108300ef9c6270fbe6e81", null ],
+    [ "DI_PartInserted", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a343cecba88759d1142f641ebd19f42ab", null ],
+    [ "DI_SledgeInHP", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a4c1fbd3e600703c03762e3bb9578f219", null ],
+    [ "DI_SledgeInWP", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a166c1ffeac744dd633a57e77b9e96a5f", null ],
+    [ "DI_Start", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a617abef689b50378cfaf04a882e5b8bc", null ],
+    [ "DI_Stop", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a65f8b162a8f8a9df21bcfcce2851db2f", null ],
+    [ "DO_CloseGripper", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a88fcc3bd0b114f3290965388df75574d", null ],
+    [ "DO_Fail", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a68d52f706c80ccadc06156a1bc272203", null ],
+    [ "DO_IndexToWP", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a72a2ef16865aade2c2d0587c83c83bc7", null ],
+    [ "DO_Pass", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a4d0b883de109aa8bf825f265ffd7aa30", null ],
+    [ "DO_PCReady", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#adaaebf856add6f8d8c0f314c48ead940", null ],
+    [ "DO_SledgeToWP", "class_maschine1_1_1_demo_1_1_demo_b_k_1_1_demo_channels.html#a453c662f5a5e15fce8eaf8dddf28d95a", null ]
+];

@@ -1,0 +1,25 @@
+var class_demo2_1_1_demo_b_k_1_1_demo_channels =
+[
+    [ "DemoChannels", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a101e3743fa2416482afaf1738b4cca94", null ],
+    [ "InitChannelList", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a392ea43b16e896f7620f3218fea56c76", null ],
+    [ "CardDef430_1", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a0bf6d7a47935f7cea63f0a58488c56d3", null ],
+    [ "CardDef430_2", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a40518351c86d81b2f8249a2f77928c8d", null ],
+    [ "CardDef530_1", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#aa048bca22e5dad50a1a7d920a50abe5c", null ],
+    [ "CardDef842_0", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a598a51af4301f0d425194d0443eeb86c", null ],
+    [ "DI_GripperInHP", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a3f9161bb426e4e82c946cd3440b182bc", null ],
+    [ "DI_GripperInWP", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a329721df741a64502b4ac09c487aa999", null ],
+    [ "DI_IndexInHP", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a1f8e8b33d3873e5351a9414538ff99cb", null ],
+    [ "DI_IndexInWP", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a01f109010b5b3e1542929a9b94404f14", null ],
+    [ "DI_MainPressureReady", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a8410479827a0ab6a7ca88edcbd6399aa", null ],
+    [ "DI_PartInserted", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a57eb3d62420a5c4551f5017314ce9860", null ],
+    [ "DI_SledgeInHP", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a5443e9ac207c631d753b6ef247fb3eae", null ],
+    [ "DI_SledgeInWP", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a9a8537b48acb99c4cd7101f39539a460", null ],
+    [ "DI_Start", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#af90a4209e14381cf1afbabc1a0f49209", null ],
+    [ "DI_Stop", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#aea1be20dfc513f1b17d5d6d99cb7f11c", null ],
+    [ "DO_CloseGripper", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a347781acc12bbb9aac785828218000a4", null ],
+    [ "DO_Fail", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a7a68426ce380df6947b806c8358bf00a", null ],
+    [ "DO_IndexToWP", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#aa376bbe30e1d2f3dd99c3d7ad9dc9c83", null ],
+    [ "DO_Pass", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a0211839c5d74f86437749e2c7539346e", null ],
+    [ "DO_PCReady", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#ac245d348a019917877251cf50128f356", null ],
+    [ "DO_SledgeToWP", "class_demo2_1_1_demo_b_k_1_1_demo_channels.html#a34f8f35fb875c062af3acb725386d955", null ]
+];

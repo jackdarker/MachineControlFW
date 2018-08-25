@@ -1,0 +1,19 @@
+Typ1
+
+
+
+
+
+
+
+;ProdNo;SerialNo;Rework;WT;Date;Time;Worker;Test Result;AD1;AD1_pass/fail;Torque peaks CW avg;Torque peaks CW avg_pass/fail;ButtonOK;ButtonOK_pass/fail;Torque peaks CCW avg;Torque peaks CCW avg_pass/fail;
+Unit;;;;;;;;;;;;;;;;;
+maxSet;;;;;;;;;5,1;;4;;;;4;;
+minSet;;;;;;;;;2;;2;;;;2;;
+
+;1370;;;;15.04.2014;09:46;user;Fail;5,72 ;Fail;0 ;Ignored;True;Pass;0 ;Ignored
+;6246;;;;15.04.2014;09:46;user;Fail;5,07 ;Pass;0 ;Ignored;False;Fail;0 ;Ignored
+;2762;;;;15.04.2014;09:47;user;Fail;3,84 ;Pass;0 ;Ignored;False;Fail;0 ;Ignored
+;3631;;;;15.04.2014;10:28;user;Fail;4,71 ;Pass;0 ;Ignored;False;Fail;0 ;Ignored
+;8604;;;;15.04.2014;10:29;user;Fail;5,52 ;Fail;0 ;Ignored;True;Pass;0 ;Ignored
+;1436;;;;15.04.2014;15:19;user;Pass;4,56 ;Pass;0 ;Ignored;True;Pass;0 ;Ignored

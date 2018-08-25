@@ -1,0 +1,17 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Arial",fontsize="10",labelfontname="Arial",labelfontsize="10"];
+  node [fontname="Arial",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Form",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node2 [label="Demo.DemoApp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_demo_1_1_demo_app.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node3 [label="WagoBK.DlgCardDef511Properties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_dlg_card_def511_properties.html",tooltip="configuration dialog for 511 "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node4 [label="WagoBK.DlgCardDef631Properties",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_dlg_card_def631_properties.html",tooltip="configuration dialog for 631 "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node5 [label="WagoBK.DlgWagoBKControl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_dlg_wago_b_k_control.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node6 [label="WagoBK.Test.BKSim",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_test_1_1_b_k_sim.html"];
+}

@@ -1,0 +1,40 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:SortedList id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/ns/System.Collections">
+<keys href="#ref-2"/>
+<values href="#ref-3"/>
+<_size>3</_size>
+<version>13</version>
+<comparer href="#ref-4"/>
+<keyList xsi:null="1"/>
+<valueList xsi:null="1"/>
+</a1:SortedList>
+<SOAP-ENC:Array id="ref-2" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item id="ref-5" xsi:type="SOAP-ENC:string">Typ1</item>
+<item id="ref-6" xsi:type="SOAP-ENC:string">Typ2</item>
+<item id="ref-7" xsi:type="SOAP-ENC:string">Typ3</item>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-3" SOAP-ENC:arrayType="xsd:anyType[16]">
+<item id="ref-8" xsi:type="SOAP-ENC:string"></item>
+<item href="#ref-8"/>
+<item href="#ref-8"/>
+</SOAP-ENC:Array>
+<a1:Comparer id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/ns/System.Collections">
+<CompareInfo href="#ref-9"/>
+</a1:Comparer>
+<a3:CompareInfo id="ref-9" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Globalization">
+<win32LCID>1031</win32LCID>
+<culture>1031</culture>
+<m_name id="ref-10">de-DE</m_name>
+</a3:CompareInfo>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+ef-11">de-DE</m_name>
+</a3:CompareInfo>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+="ref-12">de-DE</m_name>
+</a3:CompareInfo>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+

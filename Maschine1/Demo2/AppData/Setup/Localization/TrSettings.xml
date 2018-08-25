@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document SerializerDocName="TrSettings.xml" SerializerVersion="1.0.0.0">
+ <Application>
+  <Languages DefaultLanguage="german" Count="3">
+   <Lang Name="default" />
+   <Lang Name="english" />
+   <Lang Name="german" />
+  </Languages>
+ </Application>
+</Document>

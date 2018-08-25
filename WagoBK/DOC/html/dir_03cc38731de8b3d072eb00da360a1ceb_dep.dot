@@ -1,0 +1,13 @@
+digraph "D:/Projects/Csharp" {
+  compound=true
+  node [ fontsize="10", fontname="Arial"];
+  edge [ labelfontsize="10", labelfontname="Arial"];
+  subgraph clusterdir_70399fa3d88a5292b2b41a1f3fe3e4e2 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Projects" fontname="Arial", fontsize="10", URL="dir_70399fa3d88a5292b2b41a1f3fe3e4e2.html"]
+  subgraph clusterdir_03cc38731de8b3d072eb00da360a1ceb {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_03cc38731de8b3d072eb00da360a1ceb.html"];
+    dir_03cc38731de8b3d072eb00da360a1ceb [shape=plaintext label="Csharp"];
+    dir_042fdc22e877302cd8dcca5048bca1b3 [shape=box label="WagoBK" color="red" fillcolor="white" style="filled" URL="dir_042fdc22e877302cd8dcca5048bca1b3.html"];
+  }
+  }
+}

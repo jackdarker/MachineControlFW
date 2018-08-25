@@ -1,0 +1,15 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:TypeCounter_x002B_strTypeCounter id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Maschine1.Statistic/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<m_TypeName id="ref-3">Typ1</m_TypeName>
+<m_TotalCountPass>6</m_TotalCountPass>
+<m_TotalCountFail>17</m_TotalCountFail>
+<m_DayCountPass>5</m_DayCountPass>
+<m_DayCountFail>15</m_DayCountFail>
+<m_DayCountUpdate>2014-05-01T12:54:48.5809302+02:00</m_DayCountUpdate>
+<m_PackageSize>0</m_PackageSize>
+<m_PackageCount>0</m_PackageCount>
+<m_PackageID xsi:null="1"/>
+</a1:TypeCounter_x002B_strTypeCounter>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document SerializerDocName="UserDat" SerializerVersion="1.0.0.0">
+ <Application>
+  <Users>
+   <User Name="user" Role="1" Pass="vtfs" />
+   <User Name="admin" Role="128" Pass="benjo" />
+   <User Name="neu2" Role="128" Pass="uftu" />
+  </Users>
+ </Application>
+</Document>

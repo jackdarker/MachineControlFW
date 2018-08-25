@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8DABF4C-B030-4E44-92CE-00CE6C69EA5E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WagoBK</RootNamespace>
+    <AssemblyName>WagoBK</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardDef\CardDef430.cs">
+    </Compile>
+    <Compile Include="CardDef\CardDef461.cs" />
+    <Compile Include="CardDef\CardDef468.cs" />
+    <Compile Include="CardDef\CardDef479.cs" />
+    <Compile Include="CardDef\CardDef511.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardDef\CardDef655.cs" />
+    <Compile Include="CardDef\CardDef841.cs" />
+    <Compile Include="CardDef\CardDef530.cs" />
+    <Compile Include="CardDef\CardDef842.cs" />
+    <Compile Include="CardDef\CardDefBase.cs" />
+    <Compile Include="CardDef\CardManager.cs" />
+    <Compile Include="CardDef\CardDef550.cs" />
+    <Compile Include="ChannelDef\ChannelDefBase.cs" />
+    <Compile Include="ChannelDef\ChannelDI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChannelDef\ChannelDI.Designer.cs">
+      <DependentUpon>ChannelDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChannelDef\ChannelDO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChannelDef\ChannelDO.Designer.cs">
+      <DependentUpon>ChannelDO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChannelDef\ChannelAI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChannelDef\ChannelAI.Designer.cs">
+      <DependentUpon>ChannelAI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChannelDef\ChannelAO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChannelDef\ChannelAO.Designer.cs">
+      <DependentUpon>ChannelAO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\DemoApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo\DemoApp.Designer.cs">
+      <DependentUpon>DemoApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\DemoBK.cs" />
+    <Compile Include="Core\DlgWagoBKControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\DlgWagoBKControl.Designer.cs">
+      <DependentUpon>DlgWagoBKControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CardDef\CardDef511.resx">
+      <DependentUpon>CardDef511.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChannelDef\ChannelDI.resx">
+      <DependentUpon>ChannelDI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChannelDef\ChannelDO.resx">
+      <DependentUpon>ChannelDO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChannelDef\ChannelAI.resx">
+      <DependentUpon>ChannelAI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChannelDef\ChannelAO.resx">
+      <DependentUpon>ChannelAO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo\DemoApp.resx">
+      <DependentUpon>DemoApp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\DlgWagoBKControl.resx">
+      <DependentUpon>DlgWagoBKControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\BKSim.resx">
+      <DependentUpon>BKSim.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\WagoBKPane.resx">
+      <DependentUpon>WagoBKPane.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Test\BKSim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\BKSim.Designer.cs">
+      <DependentUpon>BKSim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\WagoBKBase.cs" />
+    <Compile Include="Core\WagoBKPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\WagoBKPane.Designer.cs">
+      <DependentUpon>WagoBKPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\WagoSocketBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modbus\Modbus.csproj">
+      <Project>{9C972F17-B147-480B-96DC-EE8859923EC6}</Project>
+      <Name>Modbus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

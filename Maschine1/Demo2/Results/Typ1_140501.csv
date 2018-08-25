@@ -1,0 +1,33 @@
+Typ1
+
+
+
+
+
+
+
+;ProdNo;SerialNo;Rework;WT;Date;Time;Worker;Test Result;AD1;AD1_pass/fail;Torque peaks CW avg;Torque peaks CW avg_pass/fail;ButtonOK;ButtonOK_pass/fail;Torque peaks CCW avg;Torque peaks CCW avg_pass/fail;
+Unit;;;;;;;;;;;;;;;;;
+maxSet;;;;;;;;;5,1;;4;;;;4;;
+minSet;;;;;;;;;2;;2;;;;2;;
+
+;1314;;;;01.05.2014;09:43;user;Pass;5,09 ;Pass;0 ;Ignored;True;Pass;0 ;Ignored
+;1448;;;;01.05.2014;10:09;user;Fail;0,29 ;Fail;0 ;Ignored;False;Fail;0 ;Ignored
+;7060;;;;01.05.2014;10:09;user;Fail;0,41 ;Fail;0 ;Ignored;False;Fail;0 ;Ignored
+;2180;;;;01.05.2014;10:35;user;Pass;4,32 ;Pass;0 ;Ignored;True;Pass;0 ;Ignored
+;2272;;;;01.05.2014;10:35;user;Pass;3,37 ;Pass;0 ;Ignored;True;Pass;0 ;Ignored
+;6103;;;;01.05.2014;10:35;user;Fail;3,27 ;Pass;0 ;Ignored;False;Fail;0 ;Ignored
+;3806;;;;01.05.2014;10:36;user;Fail;0,48 ;Fail;0 ;Ignored;False;Fail;0 ;Ignored
+;8029;;;;01.05.2014;10:37;user;Fail;1,51 ;Fail;0 ;Ignored;True;Pass;0 ;Ignored
+;3763;;;;01.05.2014;10:37;user;Fail;3,73 ;Pass;0 ;Ignored;False;Fail;0 ;Ignored
+;5557;;;;01.05.2014;10:38;user;Pass;4 ;Pass;0 ;Ignored;True;Pass;0 ;Ignored
+;3798;;;;01.05.2014;10:50;user;Fail;1,22 ;Fail;0 ;Ignored;True;Pass;0 ;Ignored
+;1448;;;;01.05.2014;11:17;user;Fail;0,11 ;Fail;0 ;Ignored;True;Pass;0 ;Ignored
+;3524;;;;01.05.2014;11:17;user;Fail;5,21 ;Fail;0 ;Ignored;False;Fail;0 ;Ignored
+;936;;;;01.05.2014;12:45;user;Fail;5,85 ;Fail;0 ;Ignored;False;Fail;0 ;Ignored
+;6023;;;;01.05.2014;12:45;user;Fail;5,24 ;Fail;0 ;Ignored;True;Pass;0 ;Ignored
+;1994;;;;01.05.2014;12:51;user;Fail;0,07 ;Fail;0 ;Ignored;False;Fail;0 ;Ignored
+;3928;;;;01.05.2014;12:51;user;Fail;3,47 ;Pass;0 ;Ignored;False;Fail;0 ;Ignored
+;8316;;;;01.05.2014;12:54;user;Fail;5,36 ;Fail;0 ;Ignored;True;Pass;0 ;Ignored
+;9935;;;;01.05.2014;12:54;user;Fail;2,32 ;Pass;0 ;Ignored;False;Fail;0 ;Ignored
+;4050;;;;01.05.2014;12:54;user;Pass;2,67 ;Pass;0 ;Ignored;True;Pass;0 ;Ignored

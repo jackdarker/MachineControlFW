@@ -1,0 +1,10 @@
+digraph "Demo.DemoBK.DemoChannels"
+{
+  edge [fontname="Arial",fontsize="10",labelfontname="Arial",labelfontsize="10"];
+  node [fontname="Arial",fontsize="10",shape=record];
+  Node1 [label="Demo.DemoBK.DemoChannels",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node2 [label="Channels",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_channels.html",tooltip="Basisklasse die die Auflistung der BK-Kanäle enthält. "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ProjectCards" ,fontname="Arial"];
+  Node3 [label="WagoBK.CardManager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_manager.html"];
+}

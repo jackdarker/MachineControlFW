@@ -1,0 +1,9 @@
+digraph "D:/Projects/Csharp/WagoBK/WagoBK/ChannelDef" {
+  compound=true
+  node [ fontsize="10", fontname="Arial"];
+  edge [ labelfontsize="10", labelfontname="Arial"];
+  subgraph clusterdir_7605f127d7756d45c6fa6f613d4bf1ed {
+    graph [ bgcolor="#ddddee", pencolor="black", label="WagoBK" fontname="Arial", fontsize="10", URL="dir_7605f127d7756d45c6fa6f613d4bf1ed.html"]
+  dir_ffb91a4915efec47b36fd3261d4933f6 [shape=box, label="ChannelDef", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ffb91a4915efec47b36fd3261d4933f6.html"];
+  }
+}

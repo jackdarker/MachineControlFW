@@ -1,0 +1,33 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Arial",fontsize="10",labelfontname="Arial",labelfontsize="10"];
+  node [fontname="Arial",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="WagoBK.CardDefBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def_base.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node2 [label="WagoBK.CardDef655",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def655.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node3 [label="WagoBK.CardDef841",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def841.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node4 [label="WagoBK.CardDef842",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def842.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node5 [label="WagoBK.CardDefAnalogIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def_analog_i_o.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node6 [label="WagoBK.CardDef461",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def461.html"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node7 [label="WagoBK.CardDef468",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def468.html"];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node8 [label="WagoBK.CardDef479",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def479.html"];
+  Node5 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node9 [label="WagoBK.CardDef511",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def511.html",tooltip="BK Carddefinition &quot;2xPWM 24V 100Hz&quot; "];
+  Node5 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node10 [label="WagoBK.CardDef550",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def550.html",tooltip="BK Carddefinition &quot;2xAO 0..10V&quot; "];
+  Node5 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node11 [label="WagoBK.CardDef631",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def631.html",tooltip="BK Carddefinition &quot;2xPWM 24V 100Hz&quot; "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node12 [label="WagoBK.CardDefDigitalIO",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def_digital_i_o.html"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node13 [label="WagoBK.CardDef430",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def430.html",tooltip="BK Carddefinition &quot;8xDI 24V&quot; "];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node14 [label="WagoBK.CardDef530",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def530.html"];
+}

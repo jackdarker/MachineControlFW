@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<TranslationLookup>
+  <item>
+    <key>
+      <string>at least one type must exist</string>
+    </key>
+    <value>
+      <string>at least one type must exist</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>tabMain</string>
+    </key>
+    <value>
+      <string>tabMain</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>tabResults</string>
+    </key>
+    <value>
+      <string>tabResults</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>tabCounters</string>
+    </key>
+    <value>
+      <string>tabCounters</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>tabInfo</string>
+    </key>
+    <value>
+      <string>tabInfo</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Delete</string>
+    </key>
+    <value>
+      <string>Delete</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Save</string>
+    </key>
+    <value>
+      <string>Save</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Exit</string>
+    </key>
+    <value>
+      <string>Exit</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Result&amp;Limits</string>
+    </key>
+    <value>
+      <string>Result&amp;Limits</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Automatic Stop</string>
+    </key>
+    <value>
+      <string>Automatic Stop</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Homing</string>
+    </key>
+    <value>
+      <string>Homing</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Automatic Start</string>
+    </key>
+    <value>
+      <string>Automatic Start</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Automatic Once</string>
+    </key>
+    <value>
+      <string>Automatic Once</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>switch User</string>
+    </key>
+    <value>
+      <string>switch User</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>switch Type</string>
+    </key>
+    <value>
+      <string>switch Type</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>edit Type</string>
+    </key>
+    <value>
+      <string>edit Type</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Service...</string>
+    </key>
+    <value>
+      <string>Service...</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string />
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Delete Counter</string>
+    </key>
+    <value>
+      <string>Delete Counter</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Set Package Counter</string>
+    </key>
+    <value>
+      <string>Set Package Counter</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Set Package Size</string>
+    </key>
+    <value>
+      <string>Set Package Size</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>&lt;--</string>
+    </key>
+    <value>
+      <string>&lt;--</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Language</string>
+    </key>
+    <value>
+      <string>Language</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Manual control</string>
+    </key>
+    <value>
+      <string>Manual control</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>InputStation</string>
+    </key>
+    <value>
+      <string>InputStation</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Classification</string>
+    </key>
+    <value>
+      <string>Classification</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>lbCustomerNo</string>
+    </key>
+    <value>
+      <string>lbCustomerNo</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>lbVoltage</string>
+    </key>
+    <value>
+      <string>lbVoltage</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Traceability</string>
+    </key>
+    <value>
+      <string>Traceability</string>
+    </value>
+  </item>
+</TranslationLookup>

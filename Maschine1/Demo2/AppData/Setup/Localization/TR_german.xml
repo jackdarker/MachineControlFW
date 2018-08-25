@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<TranslationLookup>
+  <item>
+    <key>
+      <string>tabResults</string>
+    </key>
+    <value>
+      <string>Ergebnisse</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>tabCounters</string>
+    </key>
+    <value>
+      <string>Zähler</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>tabInfo</string>
+    </key>
+    <value>
+      <string>Info</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>tabMain</string>
+    </key>
+    <value>
+      <string>Status</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Delete Counter</string>
+    </key>
+    <value>
+      <string>Zähler löschen</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Set Package Size</string>
+    </key>
+    <value>
+      <string>Verpackungsgröße setzen</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Set Package Counter</string>
+    </key>
+    <value>
+      <string>Verpackungsinhalt setzen</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>at least one type must exist</string>
+    </key>
+    <value>
+      <string>wenigstens ein Typ muss existieren</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Delete</string>
+    </key>
+    <value>
+      <string>Loeschen</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Save</string>
+    </key>
+    <value>
+      <string>Speichern</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Exit</string>
+    </key>
+    <value>
+      <string>Schliessen</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Result&amp;Limits</string>
+    </key>
+    <value>
+      <string>ErgebnisseGrenzen</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Automatic Stop</string>
+    </key>
+    <value>
+      <string>Automatik Stop</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Automatic Start</string>
+    </key>
+    <value>
+      <string>Automatik Start</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Automatic Once</string>
+    </key>
+    <value>
+      <string>Automatik Einmal</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>switch User</string>
+    </key>
+    <value>
+      <string>Benutzer</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>switch Type</string>
+    </key>
+    <value>
+      <string>Typvorwahl</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>edit Type</string>
+    </key>
+    <value>
+      <string>Typeditor</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Service...</string>
+    </key>
+    <value>
+      <string>Service...</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Homing</string>
+    </key>
+    <value>
+      <string>Grundstellung -sfahrt</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>&lt;--</string>
+    </key>
+    <value>
+      <string>&lt;--</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Language</string>
+    </key>
+    <value>
+      <string>Sprache</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Manual control</string>
+    </key>
+    <value>
+      <string>Handbetrieb</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Traceability</string>
+    </key>
+    <value>
+      <string>Traceability</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>PLC1</string>
+    </key>
+    <value>
+      <string>PLC1</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Trace1</string>
+    </key>
+    <value>
+      <string>Trace1</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>InputStation</string>
+    </key>
+    <value>
+      <string>Einlegestation</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Classification</string>
+    </key>
+    <value>
+      <string>Klassifizierung</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string />
+    </key>
+    <value>
+      <string />
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>lbCustomerNo</string>
+    </key>
+    <value>
+      <string>Kundennummer</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>lbVoltage</string>
+    </key>
+    <value>
+      <string>Spannung</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Log-History</string>
+    </key>
+    <value>
+      <string>Log-History</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>final result NOK</string>
+    </key>
+    <value>
+      <string>final result NOK</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>final result OK</string>
+    </key>
+    <value>
+      <string>final result OK</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Timeout for settling State</string>
+    </key>
+    <value>
+      <string>Timeout for settling State</string>
+    </value>
+  </item>
+</TranslationLookup>

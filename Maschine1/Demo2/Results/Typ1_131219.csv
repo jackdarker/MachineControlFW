@@ -1,0 +1,22 @@
+Typ1
+
+
+
+
+
+
+
+;ProdNo;SerialNo;Rework;WT;Date;Time;Worker;Test Result;AD1;AD1_pass/fail;Torque peaks CW avg;Torque peaks CW avg_pass/fail;ButtonOK;ButtonOK_pass/fail;Torque peaks CCW avg;Torque peaks CCW avg_pass/fail;
+Unit;;;;;;;;;;;;;;;;;
+maxSet;;;;;;;;;5,1;;4;;;;4;;
+minSet;;;;;;;;;2;;2;;;;2;;
+;7235;;;;19.12.2013;10:46;Maschine1.UserManagement.User;Fail;5,17 ;Fail;0 ;NotTested;False;NotTested;0 ;NotTested
+;30;;;;19.12.2013;11:01;user;Fail;5,35 ;Fail;0 ;NotTested;False;NotTested;0 ;NotTested
+;2479;;;;19.12.2013;11:01;user;Fail;0,16 ;Fail;0 ;Ignored;False;NotTested;0 ;Ignored
+;6921;;;;19.12.2013;11:02;user;Fail;1,84 ;Fail;0 ;Ignored;False;NotTested;0 ;Ignored
+;1137;;;;19.12.2013;11:02;user;Fail;5,84 ;Fail;0 ;Ignored;False;NotTested;0 ;Ignored
+;3086;;;;19.12.2013;11:05;user;Fail;3,46 ;Pass;0 ;Ignored;False;NotTested;0 ;Ignored
+;6534;;;;19.12.2013;11:05;user;Fail;2,99 ;Pass;0 ;Ignored;False;NotTested;0 ;Ignored
+;625;;;;19.12.2013;11:25;user;Pass;4,69 ;Pass;0 ;Ignored;True;Pass;0 ;Ignored
+;294;;;;19.12.2013;11:26;user;Fail;1,52 ;Fail;0 ;Ignored;True;Pass;0 ;Ignored
+;2282;;;;19.12.2013;11:29;user;Pass;2,13 ;Pass;0 ;Ignored;True;Pass;0 ;Ignored

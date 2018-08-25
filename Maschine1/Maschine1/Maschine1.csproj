@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{80EAA89C-CFF3-4348-8847-F785F631312F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maschine1</RootNamespace>
+    <AssemblyName>Maschine1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'lib|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'lib|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WagoBK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WagoBK\WagoBK\bin\Debug\WagoBK.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\ISerializable.cs" />
+    <Compile Include="Core\SerializableDictionary.cs" />
+    <Compile Include="Core\SerializerBase.cs" />
+    <Compile Include="GUI\DlgLogBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DlgLogBrowser.Designer.cs">
+      <DependentUpon>DlgLogBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logging\LogEntry.cs" />
+    <Compile Include="Logging\LoggingSimple.cs" />
+    <Compile Include="FileIO\AppFolders.cs" />
+    <Compile Include="GUI\Dlg3Button.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Dlg3Button.Designer.cs">
+      <DependentUpon>Dlg3Button.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DlgError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DlgError.Designer.cs">
+      <DependentUpon>DlgError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MainSoftKeys.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\MainSoftKeys.designer.cs">
+      <DependentUpon>MainSoftKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\DlgTranslatorSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Localization\DlgTranslatorSelection.Designer.cs">
+      <DependentUpon>DlgTranslatorSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\TranslationLookup.cs" />
+    <Compile Include="Logging\ILogging.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Statistic\CounterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistic\CounterEditor.Designer.cs">
+      <DependentUpon>CounterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultAndLimit\LimitEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultAndLimit\LimitEditor.Designer.cs">
+      <DependentUpon>LimitEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moduledisplay\ModulDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Moduledisplay\ModulDisplay.Designer.cs">
+      <DependentUpon>ModulDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultAndLimit\PartHistoryTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultAndLimit\PartHistoryTable.Designer.cs">
+      <DependentUpon>PartHistoryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Statistic\IReportGenerator.cs" />
+    <Compile Include="Statistic\ReportGenerator.cs" />
+    <Compile Include="UserManagement\DlgUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\DlgUserLogin.Designer.cs">
+      <DependentUpon>DlgUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\DlgUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\DlgUserManagement.Designer.cs">
+      <DependentUpon>DlgUserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\User.cs" />
+    <Compile Include="UserManagement\UserManager.cs" />
+    <Compile Include="WTFile\WTFileCollection.cs" />
+    <EmbeddedResource Include="GUI\Dlg3Button.resx">
+      <DependentUpon>Dlg3Button.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DlgError.resx">
+      <DependentUpon>DlgError.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DlgLogBrowser.resx">
+      <DependentUpon>DlgLogBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainSoftKeys.resx">
+      <DependentUpon>MainSoftKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\DlgTranslatorSelection.resx">
+      <DependentUpon>DlgTranslatorSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultAndLimit\LimitEditor.resx">
+      <DependentUpon>LimitEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moduledisplay\ModulDisplay.resx">
+      <DependentUpon>ModulDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultAndLimit\PartHistoryTable.resx">
+      <DependentUpon>PartHistoryTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultAndLimit\ResultTable.resx">
+      <DependentUpon>ResultTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Moduledisplay\StationDisplay.resx">
+      <DependentUpon>StationDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic\CounterEditor.resx">
+      <DependentUpon>CounterEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TypeParams\DlgTypeEditor.resx">
+      <DependentUpon>DlgTypeEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TypeParams\DlgTypeSelector.resx">
+      <DependentUpon>DlgTypeSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserManagement\DlgUserLogin.resx">
+      <DependentUpon>DlgUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\DlgUserManagement.resx">
+      <DependentUpon>DlgUserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Maschine1.Logging.ILogEntry.datasource" />
+    <None Include="Properties\DataSources\Maschine1.Logging.LogData.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Math\Randomize.cs" />
+    <Compile Include="ResultAndLimit\ResultCollection.cs" />
+    <Compile Include="ResultAndLimit\ResultTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ResultAndLimit\ResultTable.Designer.cs">
+      <DependentUpon>ResultTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RobotDispatcher\Robot.cs" />
+    <Compile Include="RobotDispatcher\RobotDispatcher.cs" />
+    <Compile Include="Moduledisplay\StationDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Moduledisplay\StationDisplay.Designer.cs">
+      <DependentUpon>StationDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\TypeCounter.cs">
+    </Compile>
+    <Compile Include="Localization\Translator.cs" />
+    <Compile Include="TypeParams\DlgTypeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TypeParams\DlgTypeEditor.Designer.cs">
+      <DependentUpon>DlgTypeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypeParams\TypeParams.cs" />
+    <Compile Include="TypeParams\DlgTypeSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TypeParams\DlgTypeSelector.Designer.cs">
+      <DependentUpon>DlgTypeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WagoBK\WagoBKBase.cs" />
+    <Compile Include="WagoBK\WagoBKPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WagoBK\WagoBKPanel.Designer.cs">
+      <DependentUpon>WagoBKPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WTFile\WTFile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+    <Content Include="Resources\01_PrehLogo_basis_rgb.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

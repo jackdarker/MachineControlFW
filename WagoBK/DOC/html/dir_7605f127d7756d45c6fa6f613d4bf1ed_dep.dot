@@ -1,0 +1,18 @@
+digraph "D:/Projects/Csharp/WagoBK/WagoBK" {
+  compound=true
+  node [ fontsize="10", fontname="Arial"];
+  edge [ labelfontsize="10", labelfontname="Arial"];
+  subgraph clusterdir_042fdc22e877302cd8dcca5048bca1b3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="WagoBK" fontname="Arial", fontsize="10", URL="dir_042fdc22e877302cd8dcca5048bca1b3.html"]
+  subgraph clusterdir_7605f127d7756d45c6fa6f613d4bf1ed {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_7605f127d7756d45c6fa6f613d4bf1ed.html"];
+    dir_7605f127d7756d45c6fa6f613d4bf1ed [shape=plaintext label="WagoBK"];
+    dir_be85174cf09c49a647ab16c2a09d73e8 [shape=box label="CardDef" color="black" fillcolor="white" style="filled" URL="dir_be85174cf09c49a647ab16c2a09d73e8.html"];
+    dir_ffb91a4915efec47b36fd3261d4933f6 [shape=box label="ChannelDef" color="black" fillcolor="white" style="filled" URL="dir_ffb91a4915efec47b36fd3261d4933f6.html"];
+    dir_29ca23c054107f3fdb8c3104d27724c3 [shape=box label="Core" color="black" fillcolor="white" style="filled" URL="dir_29ca23c054107f3fdb8c3104d27724c3.html"];
+    dir_b6d81727838f09b20e8f4ce5d1e3723e [shape=box label="Demo" color="black" fillcolor="white" style="filled" URL="dir_b6d81727838f09b20e8f4ce5d1e3723e.html"];
+    dir_07a039598eb7e41ec9da7f23df16575e [shape=box label="Properties" color="black" fillcolor="white" style="filled" URL="dir_07a039598eb7e41ec9da7f23df16575e.html"];
+    dir_9c1e6173025d2e579fd2719204b987ec [shape=box label="Test" color="black" fillcolor="white" style="filled" URL="dir_9c1e6173025d2e579fd2719204b987ec.html"];
+  }
+  }
+}

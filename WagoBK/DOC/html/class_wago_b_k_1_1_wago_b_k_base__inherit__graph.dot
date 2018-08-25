@@ -1,0 +1,8 @@
+digraph "WagoBK.WagoBKBase"
+{
+  edge [fontname="Arial",fontsize="10",labelfontname="Arial",labelfontsize="10"];
+  node [fontname="Arial",fontsize="10",shape=record];
+  Node1 [label="WagoBK.WagoBKBase",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node2 [label="Demo.DemoBK",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_demo_1_1_demo_b_k.html"];
+}

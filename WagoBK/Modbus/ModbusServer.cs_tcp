@@ -1,0 +1,415 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
+
+namespace Modbus
+{
+    public class ModbusServerData
+    {
+        public ModbusServerData()
+        {
+        }
+
+        public void SetAllInputs(byte[] Values)
+        {
+            m_RWL.AcquireWriterLock(Timeout.Infinite);
+            try
+            {
+                int Length = Math.Min(Values.Length, m_InData.Length);
+                for (int i = 0; i < Length; i++)
+                {
+                    m_InData[i] = Values[i]; 
+                }
+            }
+            finally
+            {
+                m_RWL.ReleaseWriterLock();
+            }
+        }
+        public void SetInput(int Adress, byte Value)
+        {
+            m_RWL.AcquireWriterLock(Timeout.Infinite);
+            try
+            {
+                if (Adress < m_InData.Length)
+                {
+                    m_InData[Adress]=Value;
+                }
+            }
+            finally
+            {
+                m_RWL.ReleaseWriterLock();
+            }
+        }       
+        public byte GetInput(int Adress)
+        {
+            byte Value = 0;
+            m_RWL.AcquireReaderLock(Timeout.Infinite);
+            try
+            {
+                if (Adress < m_InData.Length)
+                {
+                    Value = m_InData[Adress];
+                }
+            }
+            finally
+            {
+                m_RWL.ReleaseReaderLock();
+            }
+            return Value;
+        }
+        public void SetAllOutputs(byte[] Values)
+        {
+            m_RWL.AcquireWriterLock(Timeout.Infinite);
+            try
+            {
+                int Length = Math.Min(Values.Length, m_OutData.Length);
+                for (int i = 0; i < Length; i++)
+                {
+                    m_OutData[i] = Values[i];
+                }
+            }
+            finally
+            {
+                m_RWL.ReleaseWriterLock();
+            }
+        }
+        public void SetOutput(int Adress, byte Value)
+        {
+            m_RWL.AcquireWriterLock(Timeout.Infinite);
+            try
+            {
+                if (Adress < m_OutData.Length)
+                {
+                    m_OutData[Adress] = Value;
+                }
+            }
+            finally
+            {
+                m_RWL.ReleaseWriterLock();
+            }
+        }
+        public byte GetOutput(int Adress)
+        {
+            byte Value = 0;
+            m_RWL.AcquireReaderLock(Timeout.Infinite);
+            try
+            {
+                if (Adress < m_OutData.Length)
+                {
+                    Value = m_OutData[Adress];
+                }
+            }
+            finally
+            {
+                m_RWL.ReleaseReaderLock();
+            }
+            return Value;
+        }
+        protected ReaderWriterLock m_RWL = new ReaderWriterLock();
+        private byte[] m_InData = new byte[256];    //Stores value server -> client 
+        private byte[] m_OutData = new byte[256];   //stores value client -> server
+
+    }
+    /// <summary>
+    /// implementation of ModbusServer
+    /// client requests or sends data to server
+    /// server stores data into lookup table
+    /// </summary>
+    public class ModbusServer
+    {
+        public class SyncEvents
+        {
+            public SyncEvents()
+            {
+
+                _newItemEvent = new AutoResetEvent(false);
+                _exitThreadEvent = new ManualResetEvent(false);
+                _eventArray = new WaitHandle[2];
+                _eventArray[0] = _newItemEvent;
+                _eventArray[1] = _exitThreadEvent;
+            }
+
+            public EventWaitHandle ExitThreadEvent
+            {
+                get { return _exitThreadEvent; }
+            }
+            public EventWaitHandle NewItemEvent
+            {
+                get { return _newItemEvent; }
+            }
+            public WaitHandle[] EventArray
+            {
+                get { return _eventArray; }
+            }
+
+            private EventWaitHandle _newItemEvent;
+            private EventWaitHandle _exitThreadEvent;
+            private WaitHandle[] _eventArray;
+        }
+        public enum State
+        {
+            Unknown = 0,
+            Initialize,
+            Connect,
+            Idle,
+            GetRequest,
+            AnswerRequest
+        }
+        public ModbusServer(SyncEvents e, string IP, int Port, ModbusServerData IO)
+        {
+            m_SyncEvents = e;
+            m_IP = IP;
+            m_Port = Port;
+            m_LastState = State.Unknown;
+            m_NextState = m_LastState;
+            m_ModbusServerData = IO;
+        }
+
+        protected bool CheckModbusHeader(byte[] Message, int MessageLength)
+        {
+            int Length = ((int)(Message[4]) << 8) + (int)(Message[5]);
+
+            bool IsOK = false;
+            if (MessageLength < 9)
+            {
+                //??EventMBusException(this, new ModBusException(ModBusException.ModBusExceptionCodeEnum.ResponseFormatError));
+            }
+            else if (Length + 6 != MessageLength)
+            {
+                //??EventMBusException(this, new ModBusException(ModBusException.ModBusExceptionCodeEnum.ResponseFormatError));
+            }
+            else if ((Message[7] & 0x80) > 0)
+            {//skip non FC
+                ModBusException.ModBusExceptionCodeEnum Code = (ModBusException.ModBusExceptionCodeEnum)Message[8];
+                //??EventMBusException(this, new ModBusException(Code));
+            }
+            else
+            {
+                m_FC = Message[7];
+                m_TransID = Message[0] << 8 + Message[1];
+                IsOK = true;
+            }
+
+            return IsOK;
+        }
+        protected byte[] BuildModbusHeader(int TransID, byte FC, byte[] Data)
+        {
+            int Length = Data.GetLength(0);
+            byte[] Out = new byte[Data.GetLength(0) + 8];
+            Out[0] = (byte)((TransID & 0xFF00) >> 8);
+            Out[1] = (byte)(TransID & 0xFF);
+            Out[2] = 0;//Protocol-ID
+            Out[3] = 0;//Protocol-ID
+            Out[4] = (byte)((Length & 0xFF00) >> 8);
+            Out[5] = (byte)(Length & 0xFF);
+            Out[6] = 1;//unitID
+            Out[7] = FC;
+            Data.CopyTo(Out, 8);
+            return Out;
+        }
+        protected byte[] BuildModbusException(Int16 TransID, byte FC, byte Code)
+        {
+            byte[] Out = new byte[9];
+            Out[0] = (byte)((TransID & 0xFF00) >> 8);
+            Out[1] = (byte)(TransID & 0xFF);
+            Out[2] = 0;//Protocol-ID
+            Out[3] = 0;//Protocol-ID
+            Out[4] = (byte)(0);
+            Out[5] = (byte)(0x3);
+            Out[6] = 1;//unitID
+            Out[7] = (byte)(FC & 0x80);
+            Out[7] = Code;
+            return Out;
+        }
+        protected byte[] RemoveModbusHeader(byte[] Message)
+        {
+            byte[] Data = new byte[Message.GetLength(0) - 8];
+            for (int i = 8; i < Message.GetLength(0); i++)
+            {
+                Data[i - 8] = Message[i];
+            }
+            return Data;
+        }
+        protected void SendBytes(byte[] Message)
+        {
+            try
+            {
+                if (IsConnected())
+                {
+                    m_Stream.Write(Message, 0, Message.Length);
+                };
+            }
+            catch (SocketException exception)
+            {
+                //connection was interupted
+                Disconnect();
+            }
+        }
+        protected int GetRequest()
+        {
+            int RecLength = 0;
+            int Timer = 0;
+            bool RecSomeData = false;
+            bool NoMoreData = false;
+            m_Input.Initialize();
+            int RequestTO = 100;
+            if (IsConnected())
+            {
+                while (Timer < RequestTO && !NoMoreData)
+                {
+                    System.Threading.Thread.Sleep(RequestTO / 10);
+                    Timer = Timer + (RequestTO / 10);
+                    if (m_Stream.DataAvailable)
+                    {
+                        RecLength = RecLength + m_Stream.Read(m_Input, RecLength, m_Input.Length);
+                        RecSomeData = true;
+                    }
+                    else
+                    {
+                        NoMoreData = RecSomeData;   //quit Timeout if some Data was received and no more is following
+                    }
+                };
+            };
+            return RecLength;
+        }
+        private void StartListening()
+        {
+            Disconnect();
+            m_Listener = new TcpListener(IPAddress.Parse(m_IP), m_Port);
+            m_Listener.Start();
+            m_Listener.BeginAcceptTcpClient(new AsyncCallback(DoAcceptTcpClientCallback),
+                m_Listener);
+        }
+        private void DoAcceptTcpClientCallback(IAsyncResult ar)
+        {
+            // Get the listener that handles the client request.
+            TcpListener listener = (TcpListener)ar.AsyncState;
+            // End the operation and display the received data on 
+            // the console.
+            m_Client = listener.EndAcceptTcpClient(ar);
+            // Process the connection here. (Add the client to a
+            // server table, read data, etc.)
+            Console.WriteLine("Client connected completed"); //??
+        }
+        private void Disconnect()
+        {
+            if (m_Client != null)
+            {
+                m_Client.Client.Shutdown(SocketShutdown.Both);
+                m_Client.Client.Disconnect(true);
+                m_Client = null;
+            };
+            m_Stream = null;
+        }
+        public bool IsConnected()
+        {
+            bool IsConnected = false;
+            if (m_Client != null)
+            {
+                IsConnected = m_Client.Connected;
+            }
+            return IsConnected;
+        }
+        public void Init()
+        { }
+        public bool CopyOutToBuffer(int Offset, int Length)
+        {
+            return false;
+        }
+        public bool CopyInToBuffer(int Offset, int Length)
+        {//copy data into transmit buffer
+            return false;
+        }
+        public void AnswerRequest()
+        {
+            byte FC = m_FC;
+            int TransID = m_TransID;
+            int Register= (m_Input[8]<<8 + m_Input[9]) * 2;
+            switch (FC)
+            {
+                case 3:
+                    if (CopyInToBuffer(Register, m_Input[10] << 8 + m_Input[11]))
+                    {
+                        BuildModbusHeader(TransID,3,m_Input);
+                    };
+
+                    break;
+                case 6:
+
+                    break;
+                case 16:
+
+                    break;
+                default:
+                    break;
+            }
+        }
+        public void ThreadRun()
+        {
+            while (!m_SyncEvents.ExitThreadEvent.WaitOne(0, false))
+            {
+                m_LastState = m_NextState;
+                Thread.Sleep(10);
+                if (m_NextState == State.Unknown)
+                {
+                    m_NextState = State.Initialize;
+                }
+                else if (m_NextState == State.Initialize)
+                {//initialize internal data
+                    Init();
+                    StartListening();
+                    m_NextState = State.Connect;  //try to conect
+                }
+                else if (m_NextState == State.Connect)
+                {//try until conection established
+                    
+                    if (IsConnected())
+                    { m_NextState = State.GetRequest; }
+                    else
+                    {
+                        Thread.Sleep(100);
+                        m_NextState = State.Connect;
+                    }
+                }
+                else if (m_NextState == State.GetRequest)
+                {//get app data 
+                    int length = GetRequest();
+                    m_NextState = State.GetRequest;
+                    if (length > 0)
+                    {
+                        if (CheckModbusHeader(m_Input, length))
+                        {
+                            m_NextState = State.AnswerRequest;
+                        }
+                    }
+                }
+                else if (m_NextState == State.AnswerRequest)
+                {//
+                   AnswerRequest();
+                   m_NextState = State.GetRequest;
+                }
+                
+            }
+            //terminate if client stopped
+        }
+        private byte[] m_Input = new byte[256];  //temporary saves received Data
+        private int m_InputLength = 0;
+        private byte[] m_Output = new byte[256];  //
+        private int m_OutputLength = 0;
+        private string m_IP;
+        private int m_Port;
+        private byte m_FC;      //pending FC
+        private int m_TransID;  //pending TransID
+        private TcpClient m_Client;
+        private TcpListener m_Listener;
+        private NetworkStream m_Stream;  //TCPIP-stream
+        private SyncEvents m_SyncEvents;
+        private State m_LastState;
+        private State m_NextState;
+        private ModbusServerData m_ModbusServerData;
+    }
+}

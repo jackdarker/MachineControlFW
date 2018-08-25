@@ -1,0 +1,10 @@
+digraph "WagoBK.DOChannelDef"
+{
+  edge [fontname="Arial",fontsize="10",labelfontname="Arial",labelfontsize="10"];
+  node [fontname="Arial",fontsize="10",shape=record];
+  Node1 [label="WagoBK.DOChannelDef",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Arial"];
+  Node2 [label="ChannelDefBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_channel_def_base.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_Card" ,fontname="Arial"];
+  Node3 [label="WagoBK.CardDefBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_wago_b_k_1_1_card_def_base.html"];
+}

@@ -1,0 +1,13 @@
+digraph "D:/Projects/Csharp/WagoBK" {
+  compound=true
+  node [ fontsize="10", fontname="Arial"];
+  edge [ labelfontsize="10", labelfontname="Arial"];
+  subgraph clusterdir_03cc38731de8b3d072eb00da360a1ceb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Csharp" fontname="Arial", fontsize="10", URL="dir_03cc38731de8b3d072eb00da360a1ceb.html"]
+  subgraph clusterdir_042fdc22e877302cd8dcca5048bca1b3 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_042fdc22e877302cd8dcca5048bca1b3.html"];
+    dir_042fdc22e877302cd8dcca5048bca1b3 [shape=plaintext label="WagoBK"];
+    dir_7605f127d7756d45c6fa6f613d4bf1ed [shape=box label="WagoBK" color="red" fillcolor="white" style="filled" URL="dir_7605f127d7756d45c6fa6f613d4bf1ed.html"];
+  }
+  }
+}
