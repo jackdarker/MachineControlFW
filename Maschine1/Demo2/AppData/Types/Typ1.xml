@@ -26,7 +26,7 @@
 </a3:Hashtable>
 <a3:Hashtable id="ref-9" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
 <LoadFactor>0.72</LoadFactor>
-<Version>6</Version>
+<Version>7</Version>
 <Comparer xsi:null="1"/>
 <HashCodeProvider xsi:null="1"/>
 <HashSize>11</HashSize>
@@ -45,74 +45,80 @@
 <item href="#ref-20"/>
 <item href="#ref-21"/>
 </SOAP-ENC:Array>
-<SOAP-ENC:Array id="ref-12" SOAP-ENC:arrayType="xsd:anyType[3]">
-<item id="ref-22" xsi:type="SOAP-ENC:string">Torque</item>
-<item id="ref-23" xsi:type="SOAP-ENC:string">TRUE</item>
-<item id="ref-24" xsi:type="SOAP-ENC:string">Voltage</item>
+<SOAP-ENC:Array id="ref-12" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item id="ref-22" xsi:type="SOAP-ENC:string">test</item>
+<item id="ref-23" xsi:type="SOAP-ENC:string">Torque</item>
+<item id="ref-24" xsi:type="SOAP-ENC:string">TRUE</item>
+<item id="ref-25" xsi:type="SOAP-ENC:string">Voltage</item>
 </SOAP-ENC:Array>
-<SOAP-ENC:Array id="ref-13" SOAP-ENC:arrayType="xsd:anyType[3]">
-<item href="#ref-25"/>
+<SOAP-ENC:Array id="ref-13" SOAP-ENC:arrayType="xsd:anyType[4]">
 <item href="#ref-26"/>
 <item href="#ref-27"/>
+<item href="#ref-28"/>
+<item href="#ref-29"/>
 </SOAP-ENC:Array>
 <a2:ResultDef_x002B_TestStepDouble id="ref-18" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Maschine1/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <m_Value>0</m_Value>
-<m_Unit id="ref-28"></m_Unit>
+<m_Unit id="ref-30"></m_Unit>
 <m_Result>NotTested</m_Result>
-<TestStepBase_x002B_m_Name id="ref-29">AD1</TestStepBase_x002B_m_Name>
-<TestStepBase_x002B_m_LimitName id="ref-30">Voltage</TestStepBase_x002B_m_LimitName>
-<TestStepBase_x002B_m_FailCode id="ref-31">100</TestStepBase_x002B_m_FailCode>
+<TestStepBase_x002B_m_Name id="ref-31">AD1</TestStepBase_x002B_m_Name>
+<TestStepBase_x002B_m_LimitName id="ref-32">Voltage</TestStepBase_x002B_m_LimitName>
+<TestStepBase_x002B_m_FailCode id="ref-33">100</TestStepBase_x002B_m_FailCode>
 <TestStepBase_x002B_m_Result>NotTested</TestStepBase_x002B_m_Result>
 </a2:ResultDef_x002B_TestStepDouble>
 <a2:ResultDef_x002B_TestStepDouble id="ref-19" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Maschine1/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <m_Value>0</m_Value>
-<m_Unit href="#ref-28"/>
+<m_Unit href="#ref-30"/>
 <m_Result>Ignored</m_Result>
-<TestStepBase_x002B_m_Name id="ref-32">Torque peaks CW avg</TestStepBase_x002B_m_Name>
-<TestStepBase_x002B_m_LimitName id="ref-33">Torque</TestStepBase_x002B_m_LimitName>
-<TestStepBase_x002B_m_FailCode id="ref-34">201</TestStepBase_x002B_m_FailCode>
+<TestStepBase_x002B_m_Name id="ref-34">Torque peaks CW avg</TestStepBase_x002B_m_Name>
+<TestStepBase_x002B_m_LimitName id="ref-35">Torque</TestStepBase_x002B_m_LimitName>
+<TestStepBase_x002B_m_FailCode id="ref-36">201</TestStepBase_x002B_m_FailCode>
 <TestStepBase_x002B_m_Result>Ignored</TestStepBase_x002B_m_Result>
 </a2:ResultDef_x002B_TestStepDouble>
 <a2:ResultDef_x002B_TestStepBool id="ref-20" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Maschine1/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <m_Value>false</m_Value>
 <m_Result>NotTested</m_Result>
-<TestStepBase_x002B_m_Name id="ref-35">ButtonOK</TestStepBase_x002B_m_Name>
-<TestStepBase_x002B_m_LimitName id="ref-36">TRUE</TestStepBase_x002B_m_LimitName>
-<TestStepBase_x002B_m_FailCode id="ref-37">300</TestStepBase_x002B_m_FailCode>
+<TestStepBase_x002B_m_Name id="ref-37">ButtonOK</TestStepBase_x002B_m_Name>
+<TestStepBase_x002B_m_LimitName id="ref-38">TRUE</TestStepBase_x002B_m_LimitName>
+<TestStepBase_x002B_m_FailCode id="ref-39">300</TestStepBase_x002B_m_FailCode>
 <TestStepBase_x002B_m_Result>NotTested</TestStepBase_x002B_m_Result>
 </a2:ResultDef_x002B_TestStepBool>
 <a2:ResultDef_x002B_TestStepDouble id="ref-21" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Maschine1/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <m_Value>0</m_Value>
-<m_Unit href="#ref-28"/>
+<m_Unit href="#ref-30"/>
 <m_Result>Ignored</m_Result>
-<TestStepBase_x002B_m_Name id="ref-38">Torque peaks CCW avg</TestStepBase_x002B_m_Name>
-<TestStepBase_x002B_m_LimitName id="ref-39">Torque</TestStepBase_x002B_m_LimitName>
-<TestStepBase_x002B_m_FailCode id="ref-40">301</TestStepBase_x002B_m_FailCode>
+<TestStepBase_x002B_m_Name id="ref-40">Torque peaks CCW avg</TestStepBase_x002B_m_Name>
+<TestStepBase_x002B_m_LimitName id="ref-41">Torque</TestStepBase_x002B_m_LimitName>
+<TestStepBase_x002B_m_FailCode id="ref-42">301</TestStepBase_x002B_m_FailCode>
 <TestStepBase_x002B_m_Result>Ignored</TestStepBase_x002B_m_Result>
 </a2:ResultDef_x002B_TestStepDouble>
-<a2:ResultDef_x002B_LimitDefDouble id="ref-25" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Maschine1/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
-<m_Limit>
-<m_LowerLimit>2</m_LowerLimit>
-<m_UpperLimit>4</m_UpperLimit>
-<m_Unit href="#ref-28"/>
-</m_Limit>
-<LimitDefBase_x002B_m_Name id="ref-41">Torque</LimitDefBase_x002B_m_Name>
-</a2:ResultDef_x002B_LimitDefDouble>
 <a2:ResultDef_x002B_LimitDefBool id="ref-26" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Maschine1/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <m_Limit>
 <m_Limit>true</m_Limit>
 </m_Limit>
-<LimitDefBase_x002B_m_Name href="#ref-23"/>
+<LimitDefBase_x002B_m_Name href="#ref-22"/>
 </a2:ResultDef_x002B_LimitDefBool>
 <a2:ResultDef_x002B_LimitDefDouble id="ref-27" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Maschine1/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
 <m_Limit>
 <m_LowerLimit>2</m_LowerLimit>
-<m_UpperLimit>5.1</m_UpperLimit>
-<m_Unit href="#ref-28"/>
+<m_UpperLimit>4</m_UpperLimit>
+<m_Unit href="#ref-30"/>
 </m_Limit>
-<LimitDefBase_x002B_m_Name id="ref-42">Voltage</LimitDefBase_x002B_m_Name>
+<LimitDefBase_x002B_m_Name id="ref-43">Torque</LimitDefBase_x002B_m_Name>
+</a2:ResultDef_x002B_LimitDefDouble>
+<a2:ResultDef_x002B_LimitDefBool id="ref-28" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Maschine1/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<m_Limit>
+<m_Limit>true</m_Limit>
+</m_Limit>
+<LimitDefBase_x002B_m_Name href="#ref-24"/>
+</a2:ResultDef_x002B_LimitDefBool>
+<a2:ResultDef_x002B_LimitDefDouble id="ref-29" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Maschine1/Maschine1%2C%20Version%3D1.0.0.0%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull">
+<m_Limit>
+<m_LowerLimit>2</m_LowerLimit>
+<m_UpperLimit>5.1</m_UpperLimit>
+<m_Unit href="#ref-30"/>
+</m_Limit>
+<LimitDefBase_x002B_m_Name id="ref-44">Voltage</LimitDefBase_x002B_m_Name>
 </a2:ResultDef_x002B_LimitDefDouble>
 </SOAP-ENV:Body>
-</SOAP-ENV:Envelope>
-lope>
 </SOAP-ENV:Envelope>

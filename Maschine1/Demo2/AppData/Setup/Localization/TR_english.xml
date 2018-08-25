@@ -232,4 +232,36 @@
       <string>Traceability</string>
     </value>
   </item>
+  <item>
+    <key>
+      <string>Log-History</string>
+    </key>
+    <value>
+      <string>Log-History</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>PLC1</string>
+    </key>
+    <value>
+      <string>PLC1</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>Trace1</string>
+    </key>
+    <value>
+      <string>Trace1</string>
+    </value>
+  </item>
+  <item>
+    <key>
+      <string>final result NOK</string>
+    </key>
+    <value>
+      <string>final result NOK</string>
+    </value>
+  </item>
 </TranslationLookup>

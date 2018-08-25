@@ -1,3 +1,5 @@
 /MachineFW/*.suo
 obj
 *.suo
+Results
+*.pdb
